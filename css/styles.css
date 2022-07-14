@@ -1,4 +1,12 @@
 /* ------- GENERAL ------- */
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --color1: #212121;
+  --color2: #ffffff;
+  --color3: #757575;
+  --color4: #2196f3;
+}
 .list {
   list-style: none;
 }
@@ -7,56 +15,79 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-family: var(--primary-font);
+  background-color: #ffffff;
+  color: var(--color3);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
-
 /* ------- MAIN MENU ------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .web-studio {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
+  line-height: 1.19;
   color: #2196f3;
 }
 .menu-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--color1);
 }
-.active-link-color {
-  color: #2196f3;
+.active-link {
+  color: var(--color4);
 }
+.modal-button:hover,
+.modal-button:focus {
+  color: var(--color1);
+}
+.menu-link:hover,
+.menu-link:focus,
 .active-link:hover,
 .active-link:focus {
-  color: #2196f3;
+  color: var(--color4);
 }
 .contact-information {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.142;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--color3);
 }
 /* ------- HERO ------- */
 .hero-text {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.363;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: #ffffff; */
+  color: var(--color2);
 }
 .modal-button {
-  background: #188ce8;
+  background-color: #188ce8;
+  font-family: inherit;
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: #ffffff;
+  line-height: 1.88;
+  background-color: var(--color4);
+  color: var(--color2);
 }
 /* ------- FUTURES ------- */
 .futures {
@@ -65,38 +96,38 @@ body {
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--color1);
 }
 .futures-description {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.714;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--color3);
 }
 /* ------- WHAT WE DO ------- */
 .employment {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.166;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--color1);
 }
 /* ------- TEAM ------- */
 .employs {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.187;
+  line-height: 1.188;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--color1);
 }
 .employs-profession {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.187;
+  line-height: 1.188;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--color3);
 }
 /* ------- FOOTER ------- */
 .address-font {
@@ -106,16 +137,15 @@ body {
 .footer-address {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  /* color: #ffffff; */
+  line-height: 1.71;
+  color: var(--color2);
 }
 .footer-links {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.714;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  /* color: rgba(255, 255, 255, 0.6); */
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-address,
 .footer-links:hover,
@@ -124,14 +154,12 @@ body {
   color: #2196f3;
 }
 /* /////////////// PORTFOLIO //////////// */
-.button-type {
-  cursor: pointer;
-}
 .portfolio-buttons {
-  font-style: normal;
+  font-family: inherit;
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -148,14 +176,14 @@ body {
 .project-description {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
 }
 .project-type {
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
 }

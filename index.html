@@ -7,8 +7,10 @@
     <title>Студія</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -22,13 +24,13 @@
         >
         <ul class="list">
           <li>
-            <a class="menu-link active-link" href="#studio">Студія</a>
+            <a class="link menu-link" href="./index.html">Студія</a>
           </li>
           <li>
-            <a class="menu-link active-link" href="#portfolio">Портфоліо</a>
+            <a class="link menu-link" href="/portfolio.html">Портфоліо</a>
           </li>
           <li>
-            <a class="menu-link active-link" href="#contacts">Контакти</a>
+            <a class="link menu-link" href="#contacts">Контакти</a>
           </li>
         </ul>
       </nav>
@@ -47,13 +49,13 @@
     </header>
     <main>
       <!------- HERO ------->
-      <section>
+      <section style="background-color: #2f303a">
         <h1 class="hero-text">Ефективні рішення для вашого бізнесу</h1>
         <button class="modal-button" type="button">Замовити послугу</button>
       </section>
       <!-- ADVANTAGES -->
       <section>
-        <h2 hidden>Наші переваги</h2>
+        <h2 class="visually-hidden">Наші переваги</h2>
         <ul class="list">
           <li>
             <h3 class="futures">увага до деталей</h3>
@@ -112,7 +114,7 @@
         </ul>
       </section>
       <!-- TEAM -->
-      <section>
+      <section style="background-color: #f5f4fa">
         <h2 class="employment">Наша команда</h2>
         <ul class="list">
           <li>
@@ -159,7 +161,7 @@
       </section>
     </main>
     <!-- FOOTER -->
-    <footer>
+    <footer style="background-color: #2f303a">
       <a class="web-studio link" href="./index.html"
         >Web<span style="color: #ffffff">Studio</span></a
       >
@@ -167,7 +169,7 @@
         <ul class="list">
           <li>
             <a
-              class="link footer-address active-link"
+              class="link contact-information active-link"
               href="https://goo.gl/maps/BgffjpTLLedmqVMu8"
               target="_blank"
               rel="noopener noreferrer"

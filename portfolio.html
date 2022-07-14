@@ -7,43 +7,58 @@
     <title>Портфоліо</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-------- HAEDER -------->
     <header>
-      <a class="web-studio link" href="./portfolio.html">Web<span style="color: #000000">Studio</span></a>  
       <nav>
+        <a class="web-studio link" href="./index.html">Web<span style="color: #000000">Studio</span></a>
         <ul class="list">
           <li>
-            <a class="link menu-link active-link" href="#studio">Студія</a></li>
+            <a class="link menu-link" href="/index.html">Студія</a></li>
           <li>
-            <a class="link menu-link active-link" href="#portfolio">Портфоліо</a></li>
+            <a class="link menu-link" href="#portfolio">Портфоліо</a></li>
           <li>
-            <a class="link menu-link active-link" href="#contacts">Контакти</a></li>
+            <a class="link menu-link" href="#contacts">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="list">
-        <li><a class="contact-information link active-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="contact-information link active-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <section>
+        <ul class="list">
+          <li><a class="contact-information link active-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="contact-information link active-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
-    </header>
+      </section>
+      </header>
     <main>
       </section>
-        <ul>
-          <button class="button-type portfolio-buttons" type="button">Всі</button>
-          <button class="button-type portfolio-buttons" type="button">Веб-сайти</button>
-          <button class="button-type portfolio-buttons" type="button">Додатки</button>
-          <button class="button-type portfolio-buttons" type="button">Дизайн</button>
-          <button class="button-type portfolio-buttons" type="button">Маркетинг</button>
+      <h1 class="visually-hidden"> Наші роботи</h1>
+        <ul class="list">
+          <li>
+            <button class="portfolio-buttons" type="button">Всі</button>
+          </li>
+          <li>
+            <button class="portfolio-buttons" type="button">Веб-сайти</button>
+          </li>
+          <li>
+             <button class="portfolio-buttons" type="button">Додатки</button>
+          </li>
+          <li>
+             <button class="portfolio-buttons" type="button">Дизайн</button>
+          </li>
+          <li>
+             <button class="portfolio-buttons" type="button">Маркетинг</button>
+          </li>
         </ul>
       </section>
       <!------- HERO ------->
       <section>
-        <h1 hidden> Наші роботи</h1>
-        <ul>
-          <li class="list">
+        <ul class="list">
+          <li>
             <img src="./img/portfolio/technocrack.jpg" alt="екран ноутбука із зображенням карт трьох людей" width="370" height="294">
             <h2 class="project-description">Технокряк</h2>
             <p class="project-type">Веб-сайт</p>
@@ -92,12 +107,15 @@
       </section>
     </main>
     <!------- FOOTER ------->
-    <footer>
-      <a class="web-studio link" href="./portfolio.html">Web<span style="color: #FFFFFF">Studio</span></a>
+    <footer style="background-color: #2f303a">
+      <a class="web-studio link" href="./index.html"
+        >Web<span style="color: #ffffff">Studio</span></a
+      >
       <address class="address-font">
         <ul class="list">
           <li>
-            <a class="link"
+            <a
+              class="link contact-information active-link"
               href="https://goo.gl/maps/BgffjpTLLedmqVMu8"
               target="_blank"
               rel="noopener noreferrer"
@@ -105,10 +123,14 @@
             >
           </li>
           <li>
-            <a class="contact-information link active-link" href="mailto:info@example.com">info@example.com</a>
+            <a class="link contact-information active-link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
           </li>
           <li>
-            <a class="contact-information link active-link" href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="link contact-information active-link" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
           </li>
         </ul>
       </address>
